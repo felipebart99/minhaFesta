@@ -5,10 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <h1>Olá</h1>
-    <img src="./images/festaAniver.jpg" alt="" />
+    <header class="hero">
+      <div class="container">
+        <p class="hero__text">VOCÊ ESTÁ CONVIDADO PARA A MINHA FESTA</p>
+        <p id="countdown"></p>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__item">
+              <b>Localização</b>
+              Rua exemplo - Piedade - Jaboatão
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Preço</b>
+              Entrada Gratuita
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Data</b>
+              30/12/2024
+            </li>
+          </ul>
+          <a href="#" class="button button--primary">Confirmar presença</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="event">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">Palhaço Andrezinho</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            officiis laboriosam quaerat incidunt non obcaecati exercitationem
+            illum dolorum itaque vel delectus, voluptas eos quasi ipsam maxime,
+            nesciunt vero repellendus aliquam.
+          </p>
+        </div>
+        <img class="event__image" src="./images/palhaco1.jpeg" alt="" />
+      </div>
+    </section>
+    <section class="event event--segundo">
+      <div class="container" data-aos="fade-left">
+        <img class="event__image" src="./images/palhaco2.jpeg" alt="" />
+        <div class="event__details">
+          <h2 class="event__details__title">Palhaço tio Bruno</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            officiis laboriosam quaerat incidunt non obcaecati exercitationem
+            illum dolorum itaque vel delectus, voluptas eos quasi ipsam maxime,
+            nesciunt vero repellendus aliquam.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="event">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">Tiririca</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            officiis laboriosam quaerat incidunt non obcaecati exercitationem
+            illum dolorum itaque vel delectus, voluptas eos quasi ipsam maxime,
+            nesciunt vero repellendus aliquam.
+          </p>
+        </div>
+        <img class="event__image" src="./images/tiririca.jpeg" alt="" />
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

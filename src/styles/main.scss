@@ -1,2 +1,36 @@
-body {
+@use "hero";
+@use "components/infos_bar";
+@use "components/button";
+@use "event";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 640px) {
+    max-width: 80%;
+  }
+  @media (max-width: 1024px) {
+    max-width: 90%;
+  }
+}
+
+#countdown {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  background-color: #c32a74;
+  border-radius: 1em;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  @media (max-width: 640px) {
+    font-size: 20px;
+  }
 }

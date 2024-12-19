@@ -1,0 +1,40 @@
+.hero {
+  background-image: url(../images/festaAniver.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+
+  .container {
+    position: absolute;
+    bottom: 30px; /* Distância da margem inferior */
+    left: 50%; /* Move o contêiner para o centro da largura */
+    transform: translateX(-50%); /* Centraliza perfeitamente na largura */
+    text-align: center; /* Centraliza o conteúdo textual */
+    width: 100%; /* Opcional, ajusta a largura conforme necessário */
+  }
+
+  &__text {
+    margin-bottom: 64px;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 800;
+    text-shadow: 2px 2px 0px pink,
+      /* Sombra inferior direita */ -2px 2px 0px pink,
+      /* Sombra inferior esquerda */ 2px -2px 0px pink,
+      /* Sombra superior direita */ -2px -2px 0px pink; /* Sombra superior esquerda */
+  }
+
+  @media (max-width: 640px) {
+    height: 90vh;
+
+    .container {
+      bottom: 5px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 24px;
+      margin: 24px 0;
+    }
+  }
+}
